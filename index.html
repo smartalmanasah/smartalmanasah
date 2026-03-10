@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنصة الذكية</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg" class="logo-header">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="navbar">
+    
+
+    <div class="logo">
+<img src="images/logo.jpeg" alt="">
+    </div>
+    <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+        ☰
+    </div>
+    <div class="nav-items" id="navMenu">
+<ul>
+        <li><a href="page4.html">تطوير المواقع والمتاجر</a></li>
+         <li><a href="page3.html">التصميم والمونتاج</a></li>
+         <li><a href="page2.html">التسويق الرقمي</a></li>
+         <li><a href="index.html">الرئيسية</a></li>
+    </ul>
+    </div>
+   </div>
+   <section class="hero">
+    <h1>حلول تسويقية إبداعية للوصول بمشروعك لأفضل النتائج</h1>
+     <h2>الاقسام</h2>
+</section>
+
+<div class="cards">
+   
+    <a href="page4.html">
+    <div class="card">
+        <img src="images/تطوير المواقع والمتاجر.png" alt="">
+        <h3> تطوير المواقع والمتاجر</h3>
+    </div>
+    </a>
+
+      <a href="page3.html">
+    <div class="card">
+        <img src="images/التصميم والمونتاج.png" alt="">
+        <h3>التصميم والمونتاج</h3>
+    </div>
+    </a>
+
+    <a href="page2.html">
+    <div class="card">
+        <img src="images/التسويق الرقمي.png" alt="">
+        <h3> التسويق الرقمي</h3>
+    </div>
+     </a>
+</div>
+
+<section class="features">
+    <h2>خدماتنا متميزة</h2>
+    <p>أفكارنا دائما خارج الصندوق</p>
+</section>
+
+<footer>
+    المنصة الذكية علامة تجارية مملوكة لشركة مجتمع أخضر القابضة
+</footer>
+  <script>
+
+function toggleMenu() {
+
+    var menu = document.getElementById("navMenu");
+    var icon = document.getElementById("menuIcon");
+
+    menu.classList.toggle("active");
+
+    if(menu.classList.contains("active")){
+        icon.innerHTML = "✖";
+    }else{
+        icon.innerHTML = "☰";
+    }
+
+}
+
+</script>
+</body>
+</html> 
+
+
