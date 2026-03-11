@@ -1,90 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المنصة الذكية</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.jpeg" class="logo-header">
+    <title>المنصة الذكية - تطوير المواقع والمتاجر</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-      <div class="navbar">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
     <div class="logo">
-<img src="images/logo.jpeg" alt="">
+      <img src="images/logo.jpeg" alt="المنصة الذكية">
     </div>
-    <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
-        ☰
-    </div>
+    <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">☰</div>
     <div class="nav-items" id="navMenu">
-<ul>
+      <ul>
         <li><a href="page4.html">تطوير المواقع والمتاجر</a></li>
-         <li><a href="page3.html">التصميم والمونتاج</a></li>
-         <li><a href="page2.html">التسويق الرقمي</a></li>
-         <li><a href="index.html">الرئيسية</a></li>
-    </ul>
+        <li><a href="page3.html">التصميم والمونتاج</a></li>
+        <li><a href="page2.html">التسويق الرقمي</a></li>
+        <li><a href="index.html">الرئيسية</a></li>
+      </ul>
     </div>
-   </div>
+  </div>
 
-   <div class="cards">
-    
-      <a href="https://wa.me/966548686124?text=مرحبا, اود التعرف على رفع وتصميم منتجات">
-    <div class="card">
-        <img src="images/رفع وتصميم منتجات.png" alt="">
-        <h3>رفع وتصميم منتجات</h3>
-    </div>
-     </a>
-   <a href="https://wa.me/966548686124?text=مرحبا, اود التعرف على انشاء موقع تعريفي">
-    <div class="card">
-        <img src="images/انشاء موقع تعريفي.png" alt="">
-        <h3>انشاء موقع تعريفي</h3>
-    </div>
-     </a>
-    <a href="https://wa.me/966548686124?text=مرحبا,اود التعرف على تصميم متجر الكتروني">
-    <div class="card">
-        <img src="images/تصميم متجر الكتروني.png" alt="">
-        <h3>تصميم متجر الكتروني</h3>
-    </div>
-     </a>
-    <a href="https://wa.me/966548686124?text=مرحبا,اود التعرف على اطلاق متجر الكتروني">
-    <div class="card">
-        <img src="images/اطلاق متجر الكتروني.png" alt="">
-        <h3>اطلاق متجر الكتروني</h3>
-    </div>
-     </a>
-     <a href="https://wa.me/966548686124?text=مرحبا , اود التعرف على ادارة متجر الكتروني">
-    <div class="card">
+  <!-- CARDS -->
+  <div class="cards">
+    <a href="https://wa.me/966548686124?text=مرحبا , اود التعرف على ادارة متجر الكتروني">
+      <div class="card">
         <img src="images/ادارة متجر الكتروني.png" alt="">
-        <h3>ادارة متجر الكتروني</h3>
-    </div>
-     </a>
-    
-</div>
+        <h3 class="card-title">ادارة متجر الكتروني</h3>
+      </div>
+    </a>
+    <a href="https://wa.me/966548686124?text=مرحبا,اود التعرف على اطلاق متجر الكتروني">
+      <div class="card">
+        <img src="images/اطلاق متجر الكتروني.png" alt="">
+        <h3 class="card-title">اطلاق متجر الكتروني</h3>
+      </div>
+    </a>
+    <a href="https://wa.me/966548686124?text=مرحبا,اود التعرف على تصميم متجر الكتروني">
+      <div class="card">
+        <img src="images/تصميم متجر الكتروني.png" alt="">
+        <h3 class="card-title">تصميم متجر الكتروني</h3>
+      </div>
+    </a>
+    <a href="https://wa.me/966548686124?text=مرحبا, اود التعرف على انشاء موقع تعريفي">
+      <div class="card">
+        <img src="images/انشاء موقع تعريفي.png" alt="">
+        <h3 class="card-title">انشاء موقع تعريفي</h3>
+      </div>
+    </a>
+    <a href="https://wa.me/966548686124?text=مرحبا, اود التعرف على رفع وتصميم منتجات">
+      <div class="card">
+        <img src="images/رفع وتصميم منتجات.png" alt="">
+        <h3 class="card-title">رفع وتصميم منتجات</h3>
+      </div>
+    </a>
+  </div>
 
-<section class="features">
+  <!-- FEATURES -->
+  <section class="features">
     <h2>خدماتنا متميزة</h2>
     <p>أفكارنا دائما خارج الصندوق</p>
-</section>
+  </section>
 
-<footer>
+  <footer>
     المنصة الذكية علامة تجارية مملوكة لشركة مجتمع أخضر القابضة
-</footer>
- <script>
+  </footer>
 
-function toggleMenu() {
-
-    var menu = document.getElementById("navMenu");
-    var icon = document.getElementById("menuIcon");
-
-    menu.classList.toggle("active");
-
-    if(menu.classList.contains("active")){
-        icon.innerHTML = "✖";
-    }else{
-        icon.innerHTML = "☰";
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("navMenu");
+      var icon = document.getElementById("menuIcon");
+      menu.classList.toggle("active");
+      icon.innerHTML = menu.classList.contains("active") ? "✖" : "☰";
     }
-
-}
-
-</script>
+  </script>
 </body>
 </html>
