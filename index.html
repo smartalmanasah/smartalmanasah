@@ -1,85 +1,88 @@
-<!DOCTYPE html>
-<html lang="ar">
+ <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المنصة الذكية</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg" class="logo-header">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
 </head>
 <body class="home">
+   <div class="navbar">
+    
 
-  <!-- NAVBAR -->
-  <div class="navbar">
     <div class="logo">
-      <img src="images/logo.jpeg" alt="المنصة الذكية">
+<img src="images/logo.jpeg" alt="">
     </div>
-    <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">☰</div>
+    <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+        ☰
+    </div>
     <div class="nav-items" id="navMenu">
-      <ul>
+<ul>
         <li><a href="page4.html">تطوير المواقع والمتاجر</a></li>
-        <li><a href="page3.html">التصميم والمونتاج</a></li>
-        <li><a href="page2.html">التسويق الرقمي</a></li>
-        <li><a href="index.html">الرئيسية</a></li>
-      </ul>
+         <li><a href="page3.html">التصميم والمونتاج</a></li>
+         <li><a href="page2.html">التسويق الرقمي</a></li>
+         <li><a href="index.html">الرئيسية</a></li>
+    </ul>
     </div>
-  </div>
+   </div>
+   <section class="hero">
+    <h1>حلول تسويقية إبداعية للوصول بمشروعك لأفضل النتائج</h1>
+     
+</section>
 
-  <!-- HERO -->
-  <section class="hero">
-  
-    <h1>حلول تسويقية إبداعية<br><span>للوصول بمشروعك</span><br>لأفضل النتائج</h1>
-    
-  </section>
-
-
- 
-
-  <!-- SERVICES CARDS -->
-  <div class="home-cards-section">
-    
-    <div class="section-line"></div>
-
-    <div class="cards">
-      <a href="page2.html">
-        <div class="card">
-          <img src="images/التسويق الرقمي.png" alt="التسويق الرقمي">
-          <h3 class="card-title">التسويق الرقمي</h3>
-        </div>
-      </a>
+<div class="cards">
+   
+    <a href="page2.html">
+    <div class="card">
+        <img src="images/التسويق الرقمي.png" alt="">
+        <h3 class="card-title"> التسويق الرقمي</h3>
+    </div>
+     </a>
       <a href="page3.html">
-        <div class="card">
-          <img src="images/التصميم والمونتاج.png" alt="التصميم والمونتاج">
-          <h3 class="card-title">التصميم والمونتاج</h3>
-        </div>
-      </a>
-      <a href="page4.html">
-        <div class="card">
-          <img src="images/تطوير المواقع والمتاجر.png" alt="تطوير المواقع والمتاجر">
-          <h3 class="card-title">تطوير المواقع والمتاجر</h3>
-        </div>
-      </a>
+    <div class="card">
+        <img src="images/التصميم والمونتاج.png" alt="">
+        <h3 class="card-title">التصميم والمونتاج</h3>
     </div>
-  </div>
+    </a>
 
-  <!-- FEATURES -->
-  <section class="features">
+    <a href="page4.html">
+    <div class="card">
+        <img src="images/تطوير المواقع والمتاجر.png" alt="">
+        <h3 class="card-title"> تطوير المواقع والمتاجر</h3>
+    </div>
+    </a>
+    
+</div>
+
+<section class="features">
     <h2>خدماتنا متميزة</h2>
     <p>أفكارنا دائما خارج الصندوق</p>
-  </section>
+</section>
 
-  <footer>
+<footer>
     المنصة الذكية علامة تجارية مملوكة لشركة مجتمع أخضر القابضة
-  </footer>
-
+</footer>
   <script>
-    function toggleMenu() {
-      var menu = document.getElementById("navMenu");
-      var icon = document.getElementById("menuIcon");
-      menu.classList.toggle("active");
-      icon.innerHTML = menu.classList.contains("active") ? "✖" : "☰";
+
+function toggleMenu() {
+
+    var menu = document.getElementById("navMenu");
+    var icon = document.getElementById("menuIcon");
+
+    menu.classList.toggle("active");
+
+    if(menu.classList.contains("active")){
+        icon.innerHTML = "✖";
+    }else{
+        icon.innerHTML = "☰";
     }
-  </script>
+
+}
+
+</script>
 </body>
-</html>
+</html> 
+
+
