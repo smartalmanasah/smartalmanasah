@@ -1,88 +1,188 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المنصة الذكية</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.jpeg" class="logo-header">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-</head>
-<body class="home">
-   <div class="navbar">
-    
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>المنصة الذكية | أفكار عبقرية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>:root{--ink:#16133F;--violet:#6D3DF2;--teal:#14C8B4;--sun:#FFB627;--bg:#F5F3FF;--card:#FFF;--text:#1E1B4B;--muted:#4B4A6E;--line:#E3DEFB;--hero:#16133F;--tint:#EDE8FF;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F0D2B;--card:#1B1844;--text:#F3F1FF;--muted:#C4C0EA;--line:#2F2A6B;--hero:#0A0820;--tint:#241F5A}}
+:root[data-theme="dark"]{--bg:#0F0D2B;--card:#1B1844;--text:#F3F1FF;--muted:#C4C0EA;--line:#2F2A6B;--hero:#0A0820;--tint:#241F5A}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Tajawal',Tahoma,Arial,sans-serif;font-size:21px;line-height:1.9;font-weight:500}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+nav{position:sticky;top:0;z-index:20;background:var(--hero);border-bottom:1px solid rgba(255,255,255,.1)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:64px}
+.logo{font-weight:900;font-size:24px;color:#fff;text-decoration:none;white-space:nowrap}
+.links{display:flex;gap:4px;overflow-x:auto}
+.links a{color:#D9D4FF;text-decoration:none;font-weight:700;font-size:18px;padding:6px 13px;border-radius:99px;white-space:nowrap}
+.links a:hover{background:rgba(255,255,255,.12);color:#fff}
+.hero{background:var(--hero);color:#fff;position:relative;overflow:hidden;padding:110px 0 120px;text-align:center}
+.hero::before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,var(--violet),transparent 68%);top:-200px;left:-140px;opacity:.75}
+.hero::after{content:"";position:absolute;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,var(--teal),transparent 68%);bottom:-220px;right:-110px;opacity:.45}
+.hero .wrap{position:relative;z-index:1}
+h1{font-size:clamp(54px,11vw,118px);line-height:1.15;margin:0 0 34px;font-weight:900}
+h1 span{display:block;color:var(--teal);font-size:.62em;margin-top:8px}
+.btn{display:inline-block;font-weight:800;font-size:23px;text-decoration:none;padding:14px 34px;border-radius:14px;background:var(--sun);color:#2A1A00}
+.btn:hover{background:#FFC857}
+section{padding:76px 0}.alt-bg{background:var(--card)}
+h2{font-size:clamp(34px,5.5vw,52px);line-height:1.3;margin:0 0 30px;font-weight:900}
+h2::after{content:"";display:block;width:84px;height:7px;border-radius:9px;background:linear-gradient(90deg,var(--violet),var(--teal));margin-top:14px}
+h3{margin:0 0 8px;font-size:24px;line-height:1.5;font-weight:800}
+h4{font-size:27px;margin:30px 0 12px;font-weight:800;color:var(--violet)}
+p{margin:0 0 16px;font-size:22px}p.big{font-size:25px;max-width:900px}p.em{font-size:24px;font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chip{background:var(--bg);border:2px solid var(--line);border-radius:99px;padding:8px 22px;font-size:21px;font-weight:800}
+.alt-bg .chip{background:var(--bg)}.chip.ads{background:var(--ink);border-color:var(--ink);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+a.card{display:block;text-decoration:none;background:var(--card);border:2px solid var(--line);border-radius:22px;padding:24px}
+a.card:hover{border-color:var(--c)}
+.ic{width:60px;height:60px;border-radius:18px;display:grid;place-items:center;font-size:30px;margin-bottom:12px;background:color-mix(in srgb,var(--c) 18%,transparent)}
+.why{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.why div{display:flex;gap:14px;align-items:flex-start;background:var(--bg);border-radius:18px;padding:18px 20px;font-size:21px;font-weight:700;border:2px solid var(--line)}
+.why div::before{content:"✓";flex:none;width:34px;height:34px;border-radius:50%;background:var(--teal);color:#06302B;display:grid;place-items:center;font-weight:900;font-size:19px;margin-top:2px}
+.why div:last-child{grid-column:1/-1;background:var(--ink);border-color:var(--ink);color:#fff;font-size:24px;font-weight:800}
+.stmt{padding:30px 0}
+.quote{background:linear-gradient(145deg,var(--violet),#4B22C9);color:#fff;border-radius:28px;padding:40px}
+.quote p{font-size:26px;font-weight:800;line-height:1.8;margin:0 0 14px}.quote p:last-child{margin:0}
+ul.ck{list-style:none;margin:0 0 16px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:10px 22px}
+ul.ck li{position:relative;padding:4px 40px 4px 0;font-size:21px}
+ul.ck li::before{content:"✓";position:absolute;right:0;top:7px;width:28px;height:28px;border-radius:50%;background:var(--teal);color:#06302B;display:grid;place-items:center;font-weight:900;font-size:16px}
+ul.vals{grid-template-columns:1fr}ul.vals li{font-size:26px;font-weight:800;padding-top:8px;padding-bottom:8px}ul.vals li::before{top:12px}
+.box{background:var(--tint);border-right:8px solid var(--violet);border-radius:20px;padding:10px 28px 18px;margin-top:26px}
+.alt-bg .box{background:var(--bg)}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px;margin-bottom:18px}
+.gg .card{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:24px}
+.alt-bg .gg .card{background:var(--bg)}
+.gg ul.ck{grid-template-columns:1fr;margin:8px 0 0}
+.num{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--violet);color:#fff;font-weight:900;font-size:24px;margin-bottom:12px}
+footer{text-align:center;padding:30px 22px 40px;color:var(--muted);font-size:20px;font-weight:700}
+@media (max-width:760px){body{font-size:20px}section{padding:56px 0}.hero{padding:80px 0 90px}.links a{font-size:17px;padding:6px 11px}.logo{font-size:21px}ul.ck{grid-template-columns:1fr}.gg{grid-template-columns:1fr}.box{padding:6px 18px 14px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.wa{position:fixed;left:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;width:68px;height:68px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.35);transition:transform .2s}.wa:hover{transform:scale(1.08)}.wa svg{width:40px;height:40px;fill:#fff}.wa::before{content:"";position:absolute;inset:0;border-radius:50%;border:3px solid #25D366;animation:wp 2s infinite}@keyframes wp{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.5);opacity:0}}@media (prefers-reduced-motion:reduce){.wa::before{animation:none}}</style></head><body>
+<nav><div class="wrap"><a class="logo" href="#top">المنصة الذكية</a><div class="links"><a href="#about">من نحن</a><a href="#partners">شركاء النجاح</a><a href="#services">خدماتنا</a><a href="#why">ما يميزنا</a><a href="#vision">رؤيتنا</a><a href="#mission">رسالتنا</a><a href="#values">قيمنا</a></div></div></nav>
+<header class="hero" id="top"><div class="wrap"><h1>المنصة الذكية<span>أفكار عبقرية</span></h1><a class="btn main" href="https://www.almanasah.net" target="_blank" rel="noopener" dir="ltr">www.almanasah.net</a></div></header>
+<section id="about" class=" "><div class="wrap"><h2>من نحن</h2><p class="big">المنصة الذكية هي شركة سعودية متخصصة في تقديم الحلول الرقمية المتكاملة، تجمع بين البرمجة والتصميم والتسويق الرقمي وإدارة الحملات الإعلانية وحسابات التواصل الاجتماعي تحت سقف واحد.</p><p class="big">انطلقت الشركة من مدينة جدة عام 2020 م بهدف مساعدة رواد الأعمال والشركات على بناء حضور رقمي قوي وتحقيق نمو مستدام في أعمالهم.</p></div></section>
+<section id="partners" class="alt-bg "><div class="wrap"><h2>شركاء النجاح</h2><div class="chips"><span class="chip" dir="auto">سلة – Salla</span><span class="chip" dir="auto">زد – ZID</span><span class="chip" dir="auto">شوبيفاي – Shopify</span><span class="chip" dir="auto">ماجنتو – Magento</span><span class="chip" dir="auto">ووكومرس – WooCommerce</span><span class="chip" dir="auto">متاجر - Matajer</span><span class="chip" dir="auto">hostinger</span><span class="chip" dir="auto">godaddy</span><span class="chip" dir="auto">bluehost</span><span class="chip" dir="auto">hosting</span><span class="chip" dir="auto">hostgator</span><span class="chip" dir="auto">Wordpress</span><span class="chip" dir="auto">dnet</span><span class="chip" dir="auto">Hawsabah | حوسبة</span><span class="chip" dir="auto">Sahara Net | صحارى نت</span></div></div></section>
+<section id="services" class=" "><div class="wrap"><h2>خدماتنا</h2><div class="grid"><a class="card" style="--c:#6D3DF2" href="#s10"><div class="ic">🎨</div><h3>تصميم الهويات البصرية والشعارات</h3></a><a class="card" style="--c:#FF5C8A" href="#s11"><div class="ic">📣</div><h3>تصميم الإعلانات والمنشورات الاحترافية</h3></a><a class="card" style="--c:#14C8B4" href="#s12"><div class="ic">📱</div><h3>إدارة حسابات التواصل الاجتماعي</h3></a><a class="card" style="--c:#FFB627" href="#s13"><div class="ic">✍️</div><h3>صناعة المحتوى التسويقي</h3></a><a class="card" style="--c:#6D3DF2" href="#s14"><div class="ic">🎯</div><h3>إدارة الحملات الإعلانية الممولة</h3></a><a class="card" style="--c:#FF5C8A" href="#s16"><div class="ic">💻</div><h3>تطوير المواقع الإلكترونية</h3></a><a class="card" style="--c:#14C8B4" href="#s21"><div class="ic">🛒</div><h3>إنشاء المتاجر الإلكترونية</h3></a><a class="card" style="--c:#FFB627" href="#s22"><div class="ic">⚙️</div><h3>برمجة الأنظمة والتطبيقات الخاصة</h3></a><a class="card" style="--c:#6D3DF2" href="#s23"><div class="ic">🔎</div><h3>تحسين محركات البحث (SEO)</h3></a><a class="card" style="--c:#FF5C8A" href="#s24"><div class="ic">📈</div><h3>التسويق الرقمي وزيادة المبيعات</h3></a><a class="card" style="--c:#14C8B4" href="#s25"><div class="ic">🚀</div><h3>تصميم صفحات الهبوط الاحترافية</h3></a><a class="card" style="--c:#FFB627" href="#s26"><div class="ic">🎬</div><h3>الموشن جرافيك والمونتاج</h3></a><a class="card" style="--c:#6D3DF2" href="#s27"><div class="ic">💡</div><h3>الاستشارات التسويقية والتقنية</h3></a><a class="card" style="--c:#FF5C8A" href="#s28"><div class="ic">🌐</div><h3>حجز الاستضافة والنطاقات</h3></a><a class="card" style="--c:#14C8B4" href="#s29"><div class="ic">🧭</div><h3>إدارة وتطوير المشاريع الرقمية</h3></a></div></div></section>
+<section id="why" class="alt-bg "><div class="wrap"><h2>ما يميزنا</h2><div class="why"><div>جميع الخدمات الرقمية في مكان واحد</div><div>فريق متخصص في البرمجة والتصميم والتسويق</div><div>حلول مخصصة تناسب احتياجات كل مشروع</div><div>التركيز على تحقيق نتائج ومبيعات حقيقية</div><div>أسعار تنافسية وباقات مرنة</div><div>سرعة في التنفيذ والالتزام بالمواعيد</div><div>دعم فني ومتابعة مستمرة</div><div>خبرة في السوق السعودي والخليجي</div><div>تقارير دورية وقياس للأداء والنتائج</div><div>أحدث التقنيات والاستراتيجيات التسويقية</div><div>شريك نجاح طويل الأمد وليس مجرد مقدم خدمة</div></div></div></section>
+<section class="stmt"><div class="wrap"><div class="quote"><p>نؤمن أن نجاح أي مشروع يبدأ بفكرة مميزة، ثم يتحول إلى واقع من خلال التخطيط السليم والتنفيذ الاحترافي.</p><p>لذلك نقدم خدمات تطوير المواقع والمتاجر الإلكترونية، وتصميم الهويات البصرية، وإدارة المحتوى، والتسويق الرقمي، وتحليل الأسواق، لنكون شريك النجاح الحقيقي لعملائنا في مختلف القطاعات.</p></div></div></section>
+<section id="vision" class=" "><div class="wrap"><h2>رؤيتنا</h2><p class="big">أن نكون الشريك الرقمي الأول للشركات ورواد الأعمال في المملكة العربية السعودية والعالم العربي من خلال تقديم حلول تقنية وتسويقية مبتكرة تحقق النمو والتميز.</p></div></section>
+<section id="mission" class="alt-bg "><div class="wrap"><h2>رسالتنا</h2><p class="big">تمكين المشاريع والمنشآت من النجاح في العالم الرقمي عبر خدمات احترافية متكاملة تجمع بين التقنية والإبداع والتسويق الفعّال.</p></div></section>
+<section class="stmt"><div class="wrap"><div class="quote"><p>نعمل وفق منهجية تعتمد على الابتكار والجودة والنتائج القابلة للقياس، ونحرص على تقديم حلول عصرية تناسب احتياجات السوق السعودي والخليجي والعربي، مع التركيز على تحقيق أعلى عائد استثماري لعملائنا.</p></div></div></section>
+<section id="values" class=" "><div class="wrap"><h2>قيمنا</h2><ul class="ck vals"><li>الجودة والإتقان.</li><li>الابتكار والتطوير المستمر.</li><li>الشفافية والمصداقية.</li><li>التركيز على النتائج.</li><li>بناء شراكات طويلة الأمد مع العملاء.</li></ul></div></section>
+<section id="s10" class="alt-bg "><div class="wrap"><h2>تصميم الهويات البصرية والشعارات</h2><p class="">نقدم خدمات تصميم الشعارات والهويات البصرية الاحترافية التي تعكس هوية علامتك التجارية وتمنحها حضوراً مميزاً في السوق.</p>
+<p class="">نعمل على ابتكار تصاميم فريدة تجمع بين الإبداع والاحترافية لتساعدك على بناء صورة ذهنية قوية لدى عملائك وزيادة ثقتهم بعلامتك التجارية.</p>
+<h4>تشمل الخدمة:</h4>
+<ul class="ck"><li>تصميم شعار احترافي ومميز.</li><li>اختيار الألوان والخطوط المناسبة للعلامة التجارية.</li><li>تصميم الهوية البصرية المتكاملة.</li><li>تصميم بطاقة الأعمال والأوراق الرسمية.</li><li>إعداد دليل استخدام الهوية البصرية.</li><li>توفير الملفات بجميع الصيغ المناسبة للطباعة والاستخدام الرقمي.</li></ul>
+<div class="box">
+<p class="">نصمم هوية تعبر عن مشروعك وتجعله أكثر تميزاً واحترافية.</p>
+</div></div></section>
+<section id="s11" class=" "><div class="wrap"><h2>تصميم الإعلانات والمنشورات الاحترافية</h2><p class="">نقدم خدمات تصميم الإعلانات والمنشورات التسويقية باحترافية عالية لمساعدة العلامات التجارية على جذب الانتباه وزيادة التفاعل وتحقيق أهدافها التسويقية.</p>
+<p class="">نحرص على دمج الإبداع مع الاستراتيجية التسويقية لإنتاج تصاميم مؤثرة تعكس هوية المشروع وتوصل الرسالة بوضوح إلى الجمهور المستهدف.</p>
+<h4>تشمل الخدمة:</h4>
+<ul class="ck"><li>تصميم منشورات منصات التواصل الاجتماعي.</li><li>تصميم الإعلانات الترويجية والعروض الخاصة.</li><li>تصميم البنرات والمواد الإعلانية الرقمية.</li><li>تصميم القصص والإعلانات المتوافقة مع سناب شات وإنستغرام.</li><li>إعداد تصاميم متوافقة مع الهوية البصرية للعلامة التجارية.</li><li>تصميمات مهيأة لزيادة التفاعل وتحقيق نتائج أفضل.</li></ul>
+<div class="box">
+<p class="">نحوّل أفكارك ورسائلك التسويقية إلى تصاميم جذابة تترك انطباعاً قوياً لدى عملائك وتعزز حضورك الرقمي.</p>
+</div></div></section>
+<section id="s12" class="alt-bg "><div class="wrap"><h2>إدارة حسابات التواصل الاجتماعي</h2><p class="">نقدم خدمات إدارة حسابات التواصل الاجتماعي باحترافية بهدف بناء حضور رقمي قوي لعلامتك التجارية، وزيادة التفاعل مع جمهورك، وتحويل المتابعين إلى عملاء فعليين.</p>
+<p class="">نعتمد على استراتيجيات مدروسة ومحتوى إبداعي يعكس هوية نشاطك التجاري ويساعدك على تحقيق أهدافك التسويقية.</p>
+<h4>تشمل الخدمة:</h4>
+<ul class="ck"><li>إعداد خطة محتوى شهرية.</li><li>كتابة المحتوى التسويقي الاحترافي.</li><li>تصميم المنشورات والقصص الإبداعية.</li><li>جدولة ونشر المحتوى بشكل منتظم.</li><li>إدارة التفاعل والرد على الاستفسارات.</li><li>متابعة وتحليل الأداء وإعداد التقارير.</li><li>بناء الهوية الرقمية وتعزيز الوعي بالعلامة التجارية.</li><li>زيادة الوصول والتفاعل مع الجمهور المستهدف.</li></ul>
+<div class="box">
+<p class="">نساعدك على التفرغ لإدارة أعمالك بينما نتولى إدارة حضورك الرقمي باحترافية لتحقيق نمو مستدام ونتائج ملموسة.</p>
+</div></div></section>
+<section id="s13" class=" "><div class="wrap"><h2>صناعة المحتوى التسويقي</h2><p class="">نقدم خدمات صناعة المحتوى التسويقي الإبداعي الذي يساعد على جذب العملاء، وتعزيز الثقة بالعلامة التجارية، وزيادة التفاعل والمبيعات.</p>
+<p class="">نعتمد على فهم الجمهور المستهدف وتحليل السوق لإنتاج محتوى هادف يوصل رسالتك بطريقة مؤثرة ويحقق أهدافك التسويقية.</p>
+<h4>تشمل الخدمة:</h4>
+<ul class="ck"><li>كتابة المحتوى التسويقي لمنصات التواصل الاجتماعي.</li><li>إعداد المحتوى الترويجي للعروض والمنتجات والخدمات.</li><li>كتابة النصوص الإعلانية الجاذبة.</li><li>إعداد المحتوى للمواقع الإلكترونية والمتاجر الإلكترونية.</li><li>كتابة المقالات والمدونات المتوافقة مع محركات البحث.</li><li>صناعة الأفكار الإبداعية للحملات التسويقية.</li><li>إعداد السيناريوهات والنصوص للفيديوهات الإعلانية.</li></ul>
+<div class="box">
+<p class="">نحوّل أفكارك ورسائلك إلى محتوى احترافي يجذب الانتباه، ويبني الثقة، ويحفز العملاء على اتخاذ قرار الشراء.</p>
+</div></div></section>
+<section id="s14" class="alt-bg "><div class="wrap"><h2>إدارة الحملات الإعلانية الممولة</h2><p class="">نساعدك على الوصول إلى عملائك المستهدفين وتحقيق أفضل عائد على ميزانية الإعلان من خلال إدارة احترافية للحملات الإعلانية على مختلف المنصات الرقمية، بدءًا من التخطيط وحتى تحليل النتائج وتحسين الأداء بشكل مستمر.</p>
+<h4>الخدمة تشمل:</h4>
+<ul class="ck"><li>دراسة النشاط التجاري وتحليل المنافسين.</li><li>تحديد الأهداف التسويقية المناسبة.</li><li>تحديد الجمهور المستهدف بدقة.</li><li>إعداد استراتيجية الحملة الإعلانية.</li><li>كتابة المحتوى الإعلاني الجاذب.</li><li>تصميم الإعلانات الإبداعية.</li><li>إنشاء وإدارة الحملات الإعلانية.</li><li>إعادة استهداف العملاء المحتملين (Remarketing).</li><li>تحسين أداء الحملات بشكل مستمر.</li><li>مراقبة الإنفاق الإعلاني.</li><li>متابعة النتائج وتحليل البيانات.</li><li>تقارير دورية توضح أداء الحملات.</li><li>تقديم التوصيات لزيادة المبيعات وتقليل تكلفة الاكتساب.</li></ul>
+<div class="box">
+<h4>المنصات التي ندير إعلاناتها:</h4>
+<div class="chips"><span class="chip ads" dir="ltr">Google Ads</span><span class="chip ads" dir="ltr">Snapchat Ads</span><span class="chip ads" dir="ltr">Instagram Ads</span><span class="chip ads" dir="ltr">Facebook Ads</span><span class="chip ads" dir="ltr">TikTok Ads</span><span class="chip ads" dir="ltr">X Ads (تويتر)</span><span class="chip ads" dir="ltr">LinkedIn Ads</span></div>
+<h4>هدفنا:</h4>
+<p class="">تحويل ميزانية الإعلان إلى عملاء حقيقيين ومبيعات قابلة للنمو، من خلال إدارة احترافية تعتمد على التحليل والتطوير المستمر لتحقيق أعلى عائد ممكن على الاستثمار (ROI).</p>
+</div></div></section>
+<section id="s16" class=" "><div class="wrap"><h2>تطوير المواقع الإلكترونية</h2><div class="gg">
+<div class="card"><span class="num">1</span><h3>تصميم المواقع التعريفية</h3><ul class="ck"><li>مواقع الشركات والمؤسسات</li><li>مواقع الخدمات</li><li>المواقع الشخصية</li></ul></div>
+<div class="card"><span class="num">2</span><h3>تطوير المتاجر الإلكترونية</h3><ul class="ck"><li>إنشاء متجر احترافي</li><li>ربط بوابات الدفع</li><li>شركات الشحن</li><li>إدارة المنتجات والطلبات</li></ul></div>
+<div class="card"><span class="num">3</span><h3>تصميم واجهات وتجربة المستخدم (UI/UX)</h3><ul class="ck"><li>تصميم احترافي ومتجاوب</li><li>تحسين تجربة المستخدم</li><li>نماذج أولية (Prototype)</li></ul></div>
+<div class="card"><span class="num">4</span><h3>برمجة الأنظمة الإلكترونية</h3><ul class="ck"><li>أنظمة إدارة العملاء (CRM)</li><li>أنظمة إدارة الموارد (ERP)</li><li>أنظمة الحجز والمواعيد</li><li>الأنظمة المخصصة</li></ul></div>
+<div class="card"><span class="num">5</span><h3>برمجة تطبيقات الويب (Web Applications)</h3><ul class="ck"><li>لوحات تحكم</li><li>بوابات العملاء</li><li>المنصات الإلكترونية</li></ul></div>
+<div class="card"><span class="num">6</span><h3>تحسين محركات البحث (SEO)</h3><ul class="ck"><li>تهيئة الموقع لمحركات البحث</li><li>تحسين سرعة الموقع</li><li>تحسين هيكلة الصفحات</li><li>تحسين الظهور في نتائج جوجل</li></ul></div>
+<div class="card"><span class="num">7</span><h3>تطوير الأداء والحماية</h3><ul class="ck"><li>شهادة SSL</li><li>تحسين السرعة</li><li>النسخ الاحتياطي</li><li>الحماية من الاختراق</li></ul></div>
+<div class="card"><span class="num">8</span><h3>الاستضافة والدومينات</h3><ul class="ck"><li>حجز النطاقات</li><li>استضافة المواقع</li><li>البريد الإلكتروني الاحترافي</li><li>نقل المواقع والاستضافة</li></ul></div>
+<div class="card"><span class="num">9</span><h3>الصيانة والدعم الفني</h3><ul class="ck"><li>تحديثات دورية</li><li>إصلاح الأخطاء</li><li>مراقبة الأداء</li><li>دعم فني مستمر</li></ul></div>
+<div class="card"><span class="num">10</span><h3>ربط الخدمات الخارجية</h3><ul class="ck"><li>ربط Google Analytics</li><li>ربط Google Search Console</li><li>ربط Google Maps</li><li>ربط WhatsApp Business</li><li>ربط وسائل التواصل الاجتماعي</li><li>ربط APIs والأنظمة الخارجية</li></ul></div>
+<div class="card"><span class="num">11</span><h3>تعدد اللغات</h3><ul class="ck"><li>مواقع عربية وإنجليزية</li><li>دعم لغات متعددة</li><li>إدارة المحتوى متعدد اللغات</li></ul></div>
+<div class="card"><span class="num">12</span><h3>إدارة المحتوى</h3><ul class="ck"><li>إنشاء المدونات</li><li>إدارة الأخبار</li><li>معرض الصور والفيديو</li><li>صفحات الخدمات والمنتجات</li></ul></div>
+<div class="card"><span class="num">13</span><h3>تحسين معدل التحويل (CRO)</h3><ul class="ck"><li>صفحات هبوط احترافية</li><li>تحسين نماذج التواصل</li><li>تحسين رحلة العميل</li><li>زيادة التحويلات والمبيعات</li></ul></div>
+<div class="card"><span class="num">14</span><h3>الاستشارات والتطوير الرقمي</h3><ul class="ck"><li>تحليل المواقع الحالية</li><li>تقديم خطة تطوير</li><li>استشارات تقنية وتسويقية</li><li>التحول الرقمي</li></ul></div>
+</div></div></section>
+<section id="s21" class="alt-bg "><div class="wrap"><h2>إنشاء المتاجر الإلكترونية</h2><p class="">نحول فكرتك إلى متجر إلكتروني احترافي جاهز للبيع، بتصميم عصري وتجربة مستخدم سهلة تساعدك على جذب العملاء وتحقيق المزيد من المبيعات</p>
+<h4>ماذا نقدم؟</h4>
+<ul class="ck"><li>إنشاء وتصميم المتاجر الإلكترونية باحترافية</li><li>تصميم متجاوب مع الجوال والكمبيوتر</li><li>إضافة وتصنيف المنتجات والخدمات</li><li>ربط بوابات الدفع الإلكتروني</li><li>ربط شركات الشحن والتوصيل</li><li>إعداد سلة المشتريات وإتمام الطلبات</li><li>ربط واتساب ووسائل التواصل الاجتماعي</li><li>إعداد صفحات المتجر الأساسية</li><li>تحسين تجربة المستخدم وسهولة التصفح</li><li>تهيئة المتجر لمحركات البحث SEO</li><li>تركيب شهادة الأمان SSL</li><li>ربط أدوات التحليل وقياس أداء المتجر</li><li>دعم وتطوير المتجر حسب احتياجات النشاط</li></ul>
+<div class="box">
+<h4>هدفنا</h4>
+<p class="">إنشاء متجر إلكتروني لا يكتفي بعرض المنتجات، بل يساعدك على تحويل الزوار إلى عملاء وزيادة مبيعاتك</p>
+</div></div></section>
+<section id="s22" class=" "><div class="wrap"><h2>برمجة الأنظمة والتطبيقات الخاصة</h2><p class="">نحوّل فكرتك إلى نظام أو تطبيق يعمل بكفاءة ويخدم احتياجات مشروعك</p>
+<p class="">نطوّر أنظمة وتطبيقات مخصصة للأعمال، يتم تصميمها وبرمجتها من الصفر وفق طبيعة نشاطك وآلية العمل لديك، مع التركيز على سهولة الاستخدام، الأمان، قابلية التوسع، وربط العمليات في منصة واحدة.</p>
+<h4>خدماتنا تشمل:</h4>
+<ul class="ck"><li>برمجة الأنظمة الإدارية الخاصة</li><li>تطوير تطبيقات الجوال</li><li>أنظمة إدارة الشركات والمؤسسات</li><li>أنظمة إدارة العملاء والمبيعات CRM</li><li>أنظمة إدارة المخزون والمستودعات</li><li>أنظمة الموظفين والموارد البشرية</li><li>أنظمة الفواتير والحسابات</li><li>أنظمة الحجوزات والمواعيد</li><li>أنظمة التعليم والتدريب</li><li>أنظمة الطلبات والتوصيل</li><li>أتمتة الإجراءات والعمليات</li><li>ربط الأنظمة وواجهات API</li><li>أنظمة المستخدمين والصلاحيات</li><li>لوحات التحكم والتقارير الذكية</li><li>تطوير أنظمة خاصة حسب متطلبات المشروع</li></ul>
+<div class="box">
+<h4>لماذا البرمجة المخصصة؟</h4>
+<p class="em">لأن مشروعك له احتياجات مختلفة</p>
+<p class="">نحن لا نقدم نظامًا جاهزًا للجميع، بل نطوّر لك حلًا برمجيًا يتوافق مع طريقة عملك، ويساعدك على تقليل العمل اليدوي، تنظيم العمليات، رفع الكفاءة، وتحسين تجربة العملاء والموظفين.</p>
+</div></div></section>
+<section id="s23" class="alt-bg "><div class="wrap"><h2>تحسين محركات البحث (SEO)</h2><p class="">نساعدك على تحسين ظهور موقعك في نتائج محركات البحث والوصول إلى العملاء الذين يبحثون عن خدماتك أو منتجاتك، من خلال استراتيجية SEO متكاملة ترفع جودة الموقع وتزيد فرص الظهور والزيارات المستهدفة.</p>
+<h4>تشمل خدماتنا:</h4>
+<ul class="ck"><li>تحليل الموقع وتحديد فرص التحسين.</li><li>البحث وتحليل الكلمات المفتاحية.</li><li>تحسين المحتوى والعناوين والوصف التعريفي.</li><li>تحسين بنية الموقع والأداء وتجربة المستخدم.</li><li>تحسين الروابط الداخلية والخارجية.</li><li>تحسين الموقع للجوال.</li><li>تحسين سرعة وأداء الموقع.</li><li>تحسين المتاجر الإلكترونية لمحركات البحث.</li><li>متابعة ترتيب الكلمات المفتاحية وتحليل النتائج.</li><li>إعداد تقارير دورية وقياس تطور الأداء.</li></ul>
+<div class="box">
+<h4>هدفنا:</h4>
+<p class="">زيادة ظهورك في نتائج البحث، جذب زيارات مستهدفة، وتحويل محركات البحث إلى قناة مستمرة لجذب العملاء والمبيعات.</p>
+</div></div></section>
+<section id="s24" class=" "><div class="wrap"><h2>التسويق الرقمي وزيادة المبيعات</h2><p class="">نساعد الشركات والمنشآت على بناء حضور رقمي قوي وتحويل التسويق الإلكتروني إلى عملاء ومبيعات فعلية من خلال استراتيجيات تسويقية مدروسة تناسب طبيعة النشاط والجمهور المستهدف</p>
+<h4>تشمل خدماتنا:</h4>
+<ul class="ck"><li>إعداد الاستراتيجيات والخطط التسويقية الرقمية.</li><li>دراسة وتحليل السوق والمنافسين.</li><li>تحديد الجمهور المستهدف وتحليل سلوك العملاء.</li><li>بناء وتحسين الهوية والحضور الرقمي.</li><li>تطوير استراتيجيات جذب العملاء المحتملين.</li><li>تحسين رحلة العميل من الوصول إلى الشراء.</li><li>زيادة التحويلات والمبيعات من القنوات الرقمية.</li><li>إدارة وتحسين المحتوى التسويقي.</li><li>تحليل نتائج الحملات والأداء التسويقي.</li><li>تقديم حلول واستشارات لتطوير المبيعات.</li></ul>
+<div class="box">
+<h4>هدفنا:</h4>
+<p class="">ليس فقط زيادة الظهور والوصول، بل بناء منظومة تسويقية تساعدك على جذب العملاء، زيادة التحويلات، وتنمية المبيعات بشكل مستمر.</p>
+</div></div></section>
+<section id="s25" class="alt-bg "><div class="wrap"><h2>تصميم صفحات الهبوط الاحترافية</h2><p class="">نصمم صفحات هبوط احترافية ومخصصة لتحقيق هدفك التسويقي، سواء كان زيادة المبيعات، جمع بيانات العملاء، استقبال طلبات التواصل أو زيادة التسجيلات.</p>
+<p class="">نعمل على بناء صفحة هبوط تجمع بين التصميم الجذاب، المحتوى التسويقي الواضح وتجربة المستخدم السهلة، مع التركيز على تحويل الزائر إلى عميل محتمل.</p>
+<h4>ماذا نقدم؟</h4>
+<ul class="ck"><li>تصميم صفحة هبوط احترافية ومتجاوبة مع الجوال والكمبيوتر.</li><li>تصميم مخصص يتناسب مع هوية ونشاط علامتك التجارية.</li><li>كتابة وتنظيم المحتوى التسويقي بطريقة مقنعة.</li><li>عناوين تسويقية جذابة وواضحة.</li><li>أزرار دعوة لاتخاذ إجراء (CTA) فعّالة.</li><li>عرض الخدمات أو المنتجات بطريقة تساعد على اتخاذ قرار الشراء.</li><li>نماذج جمع بيانات العملاء المحتملين.</li><li>ربط الصفحة بالواتساب ووسائل التواصل المناسبة.</li><li>تحسين تجربة المستخدم وسهولة التصفح.</li><li>تجهيز الصفحة للحملات الإعلانية وتحسين معدل التحويل.</li><li>ربط أدوات التتبع والتحليل عند الحاجة.</li></ul>
+<div class="box">
+<h4>لماذا تحتاج إلى صفحة هبوط احترافية؟</h4>
+<p class="">لأن الإعلان الناجح يحتاج إلى صفحة تستكمل رحلة العميل بشكل صحيح.</p>
+<p class="">صفحة الهبوط المصممة باحتراف تساعدك على استغلال زيارات الإعلانات، زيادة العملاء المحتملين ورفع فرص تحويل الزوار إلى عملاء.</p>
+</div></div></section>
+<section id="s26" class=" "><div class="wrap"><h2>الموشن جرافيك والمونتاج</h2><p class="">نحوّل أفكارك ورسالتك التسويقية إلى محتوى بصري جذاب يساعدك على لفت الانتباه، توضيح رسالتك، وتعزيز حضور علامتك التجارية.</p>
+<p class="">في المنصة الذكية نقدم خدمات الموشن جرافيك والمونتاج بأسلوب إبداعي واحترافي، مع التركيز على إيصال الفكرة بوضوح وتحقيق الهدف التسويقي من كل فيديو.</p>
+<h4>خدماتنا تشمل:</h4>
+<ul class="ck"><li>تصميم فيديوهات الموشن جرافيك الاحترافية.</li><li>مونتاج وتحرير الفيديوهات الإعلانية والتسويقية.</li><li>إنتاج محتوى فيديو مناسب لمنصات التواصل الاجتماعي.</li><li>فيديوهات إعلانية للترويج للمنتجات والخدمات.</li><li>فيديوهات تعريفية للشركات والجهات التجارية.</li><li>تحويل المعلومات والأفكار إلى فيديوهات توضيحية جذابة.</li><li>إضافة المؤثرات البصرية والانتقالات الاحترافية.</li><li>إضافة التعليق الصوتي والمؤثرات والموسيقى المناسبة.</li><li>تجهيز الفيديوهات بمقاسات وصيغ مناسبة للإعلانات والمنصات المختلفة.</li><li>إنتاج محتوى فيديو إبداعي باستخدام تقنيات الذكاء الاصطناعي عند الحاجة.</li></ul>
+<div class="box">
+<h4>لماذا الموشن جرافيك والمونتاج مع المنصة الذكية؟</h4>
+<p class="">لأننا لا نصمم فيديوًّا فقط، بل نعمل على تحويل الفكرة إلى رسالة بصرية مؤثرة تتناسب مع هوية نشاطك والجمهور المستهدف، وتساعدك على تقديم خدماتك ومنتجاتك بطريقة أكثر جذبًا واحترافية.</p>
+</div></div></section>
+<section id="s27" class="alt-bg "><div class="wrap"><h2>الاستشارات التسويقية والتقنية</h2><p class="">نساعدك على اتخاذ القرارات الصحيحة لتطوير مشروعك وتحقيق أهدافك من خلال استشارات متخصصة تجمع بين الخبرة التسويقية والحلول التقنية الحديثة.</p>
+<p class="">نقوم بدراسة مشروعك، تحليل وضعك الحالي، تحديد الفرص والتحديات، ثم تقديم حلول واستراتيجيات عملية تساعدك على النمو وتحسين الأداء وزيادة المبيعات.</p>
+<h4>تشمل خدماتنا:</h4>
+<ul class="ck"><li>تحليل المشاريع والخدمات الرقمية.</li><li>إعداد الاستراتيجيات والخطط التسويقية.</li><li>دراسة الجمهور المستهدف والمنافسين.</li><li>تطوير الهوية والحضور الرقمي.</li><li>تقديم حلول لزيادة المبيعات والعملاء.</li><li>استشارات تطوير المواقع والمتاجر الإلكترونية.</li><li>اختيار الأنظمة والتقنيات المناسبة للمشروع.</li><li>تحسين تجربة العميل والتحول الرقمي.</li><li>تقديم حلول تقنية مخصصة حسب احتياجات المشروع.</li><li>متابعة وتوجيه أصحاب المشاريع نحو القرارات المناسبة.</li></ul></div></section>
+<section id="s28" class=" "><div class="wrap"><h2>حجز الاستضافة والنطاقات</h2><p class="">نوفر لك خدمات حجز أسماء النطاقات (Domain) والاستضافات الإلكترونية (Web Hosting) لمساعدتك على إطلاق موقعك الإلكتروني أو متجرك الإلكتروني بسهولة وأمان، مع اختيار الحلول المناسبة لطبيعة مشروعك واحتياجاته.</p>
+<h4>خدماتنا تشمل:</h4>
+<ul class="ck"><li><b>حجز أسماء النطاقات:</b> اختيار وحجز اسم نطاق يعكس هوية مشروعك ويسهّل الوصول إليك.</li><li><b>الاستضافة الإلكترونية:</b> توفير استضافة مناسبة لاحتياجات موقعك أو متجرك.</li><li><b>ربط النطاق بالاستضافة:</b> إعداد الربط اللازم لتشغيل موقعك الإلكتروني.</li><li><b>شهادات الأمان SSL:</b> المساعدة في تأمين اتصال موقعك وحماية بيانات الزوار.</li><li><b>البريد الإلكتروني الرسمي:</b> إعداد بريد إلكتروني احترافي مرتبط بنطاق شركتك، حسب الباقة.</li><li><b>تجديد وإدارة الخدمات:</b> متابعة تجديد النطاق والاستضافة للمساعدة في استمرار عمل موقعك.</li></ul></div></section>
+<section id="s29" class="alt-bg "><div class="wrap"><h2>إدارة وتطوير المشاريع الرقمية</h2><p class="">تقدم شركة المنصة الذكية خدمات إدارة وتطوير المشاريع الرقمية لتحويل أفكارك إلى مشاريع ناجحة وقابلة للنمو، من خلال التخطيط الاستراتيجي، وتنظيم مراحل التنفيذ، وتطوير الحلول التقنية والتسويقية، ومتابعة الأداء وتحسين النتائج.</p>
+<p class="">نعمل على مساعدتك في بناء مشروع رقمي متكامل، ورفع كفاءته التشغيلية، وتحسين تجربة العملاء، وزيادة فرص النمو والمبيعات، بما يتناسب مع أهدافك واحتياجات سوقك.</p>
+<h4>خدماتنا تشمل:</h4>
+<ul class="ck"><li>التخطيط وإدارة المشاريع الرقمية.</li><li>تطوير المواقع والمتاجر الإلكترونية.</li><li>تحسين الأداء وتطوير الحلول الرقمية.</li><li>إدارة المهام ومتابعة مراحل التنفيذ.</li><li>تحليل النتائج وتحديد فرص النمو.</li><li>تقديم الحلول التسويقية والتقنية لتطوير المشروع.</li></ul></div></section>
 
-    <div class="logo">
-<img src="images/logo.jpeg" alt="">
-    </div>
-    <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
-        ☰
-    </div>
-    <div class="nav-items" id="navMenu">
-<ul>
-        <li><a href="page4.html">تطوير المواقع والمتاجر</a></li>
-         <li><a href="page3.html">التصميم والمونتاج</a></li>
-         <li><a href="page2.html">التسويق الرقمي</a></li>
-         <li><a href="index.html">الرئيسية</a></li>
-    </ul>
-    </div>
-   </div>
-   <section class="hero">
-    <h1>حلول تسويقية إبداعية للوصول بمشروعك لأفضل النتائج</h1>
-     
-</section>
-
-<div class="cards">
-   
-    <a href="page2.html">
-    <div class="card">
-        <img src="images/التسويق الرقمي.png" alt="">
-        <h3 class="card-title"> التسويق الرقمي</h3>
-    </div>
-     </a>
-      <a href="page3.html">
-    <div class="card">
-        <img src="images/التصميم والمونتاج.png" alt="">
-        <h3 class="card-title">التصميم والمونتاج</h3>
-    </div>
-    </a>
-
-    <a href="page4.html">
-    <div class="card">
-        <img src="images/تطوير المواقع والمتاجر.png" alt="">
-        <h3 class="card-title"> تطوير المواقع والمتاجر</h3>
-    </div>
-    </a>
-    
-</div>
-
-<section class="features">
-    <h2>خدماتنا متميزة</h2>
-    <p>أفكارنا دائما خارج الصندوق</p>
-</section>
-
-<footer>
-    المنصة الذكية علامة تجارية مملوكة لشركة مجتمع أخضر القابضة
-</footer>
-  <script>
-
-function toggleMenu() {
-
-    var menu = document.getElementById("navMenu");
-    var icon = document.getElementById("menuIcon");
-
-    menu.classList.toggle("active");
-
-    if(menu.classList.contains("active")){
-        icon.innerHTML = "✖";
-    }else{
-        icon.innerHTML = "☰";
-    }
-
-}
-
-</script>
-</body>
-</html> 
-
-
+<footer dir="ltr">www.almanasah.net</footer>
+<a class="wa" href="https://wa.me/966548686124" target="_blank" rel="noopener" aria-label="تواصل معنا عبر واتساب"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body></html>
